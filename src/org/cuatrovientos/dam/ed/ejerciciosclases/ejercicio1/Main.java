@@ -6,6 +6,9 @@ public class Main {
 
 		Customer cliente1 = new Customer("MiguelGoyena");
 		System.out.println(cliente1.toString());
+		
+		Customer cliente2 = new Customer("Ante Budimir");
+		System.out.println(cliente2.toString());
 
 	}
 
