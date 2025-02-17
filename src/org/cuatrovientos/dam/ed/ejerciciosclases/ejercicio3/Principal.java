@@ -14,13 +14,13 @@ public class Principal {
 		int numeroCaras = Integer.parseInt(numeroCarasString);
 		
 		// Ya puedo crear el dado
-		Dado miDado = new Dado(numeroCaras);
+		Dado miDado = new Dado(numeroCaras, "Mi dado de "+numeroCarasString+" caras");
 		
 		//Lanzar el dado
 		int resultado = miDado.lanzarDado();
 		
 		//Escribo por pantalla
-		System.out.println("El resultado del dado es: "+resultado);
+		System.out.println("El resultado del dado con nombre ["+miDado.getNombre()+"] es: "+resultado);
 
 	}
 

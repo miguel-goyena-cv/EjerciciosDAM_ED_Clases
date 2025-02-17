@@ -6,17 +6,16 @@ import java.util.List;
 public class Dado {
 	
 	private String name;
-	private String color;
 	private List<Cara> caras = new ArrayList<Cara>();
 	
-	public Dado(int numeroCaras) {
+	public Dado(int numeroCaras, String nombre) {
 		
 		for (int i = 0; i<numeroCaras; i++) {
 			Cara cara = new Cara(i+1);
 			caras.add(cara);
 		}
 		
-		name = "Dado de "+numeroCaras+ " caras";
+		name = nombre;
 	}
 	
 	public Dado(List<Cara> caras) {
@@ -30,6 +29,10 @@ public class Dado {
 		Cara caraTrucada = this.caras.get(0);
 		return caraTrucada.getValue();
 		
+	}
+
+	public String getNombre() {
+		return this.name;
 	} 
 
 }
