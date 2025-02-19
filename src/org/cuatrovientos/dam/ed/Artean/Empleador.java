@@ -22,4 +22,10 @@ public class Empleador extends Usuario {
 		return true;
 	}
 
+	@Override
+	public boolean registrarse() {
+		// TODO aqui pongo la lógica para el Empleador
+		return false;
+	}
+
 }

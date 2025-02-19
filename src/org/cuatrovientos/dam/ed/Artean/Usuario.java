@@ -2,7 +2,7 @@ package org.cuatrovientos.dam.ed.Artean;
 
 import java.util.Date;
 
-public class Usuario {
+public abstract class Usuario {
 
 	private int numero;
 	private static int maxNumero = 0;
@@ -46,5 +46,7 @@ public class Usuario {
 	public String getNombre() {
 		return nombre;
 	}
+	
+	public abstract boolean registrarse();
 
 }

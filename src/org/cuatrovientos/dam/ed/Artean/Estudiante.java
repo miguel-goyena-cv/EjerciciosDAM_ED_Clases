@@ -12,4 +12,10 @@ public class Estudiante extends Usuario {
 		
 	}
 
+	@Override
+	public boolean registrarse() {
+		// TODO aqui pongo la lógica para el Empleador
+		return false;
+	}
+
 }
